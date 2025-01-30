@@ -5,9 +5,10 @@ const Producto = require('../models/Producto');
 const Pedido = require('../models/Pedido');
 const Categoria = require('../models/Categoria');
 
+
 router.get('/usuarios', async (req, res) => {
   try {
-    const usuarios = await Usuario.findAll();D
+    const usuarios = await Usuario.findAll();
     res.json(usuarios);
   } catch (err) {
     res.status(500).json({ error: err.message });
