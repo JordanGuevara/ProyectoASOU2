@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const db = require('../config/db');
 
-const Pedido = db.define('Pedido', {
+const Pedido = db.define('pedidos', {
   fecha_pedido: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW
